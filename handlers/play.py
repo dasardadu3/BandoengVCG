@@ -179,7 +179,7 @@ def updated_stats(chat, queue, vol=100):
             stats += 'Volume : {}%\n'.format(vol)
             stats += 'Lagu dalam antrian : `{}`\n'.format(len(que))
             stats += 'Sedang dimainkan : **{}**\n'.format(queue[0][0])
-            stats += 'Requested by : {}'.format(queue[0][1].mention)
+            stats += 'Pamenta si : {}'.format(queue[0][1].mention)
     else:
         stats = None
     return stats
@@ -220,7 +220,7 @@ async def ee(client, message):
     if stats:
         await message.reply(stats)              
     else:
-        await message.reply('Silahkan hidupkan dulu vcg nya!')
+        await message.reply('Rek ngadengekeun lagu hurungkeun hela obrolan suara na!')
 
 @Client.on_message(
     filters.command("player")
@@ -241,7 +241,7 @@ async def settings(client, message):
         else:
             await message.reply(stats, reply_markup=r_ply('play'))
     else:
-        await message.reply('Silahkan hidupkan dulu vcg nya!')
+        await message.reply('Sok hurungkeun hela obrolan suara na!')
 
 @Client.on_callback_query(filters.regex(pattern=r'^(playlist)$'))
 async def p_cb(b, cb):
@@ -469,7 +469,7 @@ async def play(_, message: Message):
         return     
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
-    await lel.edit("🔍 **Lagunya lagi disiapin nih...**")
+    await lel.edit("🔍 **Laguna keur diteang...**")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -510,7 +510,7 @@ async def play(_, message: Message):
                 ],                     
                 [
                     InlineKeyboardButton(
-                        "**Join Group**", url="https://t.me/joinchat/RYQFBjqwQ2rVASS7"
+                        "**Join Group Khusus Bandung**", url="https://t.me/joinchat/RYQFBjqwQ2rVASS7"
                     )
                 ],
                 [       
