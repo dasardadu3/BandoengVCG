@@ -30,7 +30,7 @@
 - `/current` - Show now playing
 - `/song <song name>` - download songs you want quickly
 - `/search <query>` - search videos on youtube with details
-- `/deezer <song name>` - download songs you want quickly via deezer
+- `/deezer <song name>` - download soongs you want quickly via deezer
 - `/saavn <song name>` - download songs you want quickly via saavn
 - `/video <song name>` - download videos you want quickly
 
@@ -56,17 +56,18 @@ Klik tombol dibawah untuk mengambil String Session
 
 <a href="https://replit.com/@CollinFowel/StringSessionPyrogram#main.py"><img src="https://img.shields.io/badge/run-string__session.py-blue?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
 
-atau bisa Gabung ke [Grup Support](https://t.me/MusikVCGSupport) lalu ketik #string [TEKAN DISINI UNTUK GABUNG](https://t.me/MusikVCGSupport)
+atau bisa Gabung ke [Grup Support](https://t.me/dvgrup) lalu ketik #string [TEKAN DISINI UNTUK GABUNG](https://t.me/dvgrup)
 
 ### Credits
-- [Repi](https://github.com/collinfowel) : Dev on MusikVCG 
-- [Risman](https://github.com/mrismanaziz): Dev Music-Man
-- [InukaASiTH](https://github.com/InukaAsith): Dev
-- [Wrench](https://github.com/EverythingSuckz/): Dev
-- [QueenArzoo](https://github.com/QueenArzoo): Dev
-- [lucifeermorningstar](https://github.com/lucifeermorningstar): Dev
-- [Hamker Cat](https://github.com/thehamkercat/)
-- [Anjana-Ma](https://github.com/Anjana-Ma) 
-- [ImJanindu](https://github.com/ImJanindu)
-- [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
-- [Original Repo owners](https://github.com/suprojects/CallsMusic)
+- [Irfan](https://github.com/dasardadu3) : Dev on Bandoeng Music VCG
+
+
+
+
+
+
+
+
+
+
+
