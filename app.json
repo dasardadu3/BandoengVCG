@@ -3,7 +3,7 @@
   "description": "Bot open-source untuk memutar lagu dalam obrolan suara grup Telegram Anda.Didukung oleh pytgcalls.",
   "logo": "https://telegra.ph/file/40240a68a57a077930194.jpg",
   "keywords": ["music", "voicechat", "telegram", "vcg"],
-  "repository": "https://github.com/CollinFowel/MusikVCG",
+  "repository": "https://github.com/dasardadu/master",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
