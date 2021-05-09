@@ -220,7 +220,7 @@ async def ee(client, message):
     if stats:
         await message.reply(stats)              
     else:
-        await message.reply('Rek ngadengekeun lagu hurungkeun hela obrolan suara na!')
+        await message.reply('Hurungkeun hela sia poiscot na!')
 
 @Client.on_message(
     filters.command("player")
@@ -241,7 +241,7 @@ async def settings(client, message):
         else:
             await message.reply(stats, reply_markup=r_ply('play'))
     else:
-        await message.reply('Sok hurungkeun hela obrolan suara na!')
+        await message.reply('Hurungkeun hela sia poiscot na!')
 
 @Client.on_callback_query(filters.regex(pattern=r'^(playlist)$'))
 async def p_cb(b, cb):
@@ -439,7 +439,7 @@ async def play(_, message: Message):
                               invitelink = await _.export_chat_invite_link(chid)
                           except:
                               await lel.edit(
-                                  "<b>Tambahkan urang jadi admin heula</b>",
+                                  "<b>Tambahkeun aing jadi admin heula</b>",
                               )
                               return
 
@@ -687,7 +687,7 @@ async def deezer(client: Client, message_: Message):
         chat_id=message_.chat.id,
         reply_markup=keyboard,
         photo="final.png",
-        caption=f"🔊 **Sedang memutar lagu** [{title}]({url}) via Deezer"
+        caption=f"🔊 **Sok naek dengekeun ku sia** [{title}]({url}) via Deezer"
     ) 
     os.remove("final.png")
 
@@ -700,7 +700,7 @@ async def deezer(client: Client, message_: Message):
 @authorized_users_only
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🎵 **Tunggu sebentar yaa...**")
+    lel = await message_.reply("🎵 **Dagoan kedeung...**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
@@ -781,7 +781,7 @@ async def jiosaavn(client: Client, message_: Message):
                 ],                     
                 [
                     InlineKeyboardButton(
-                        "**Subrek Channel😘**", url="https://t.me/tempatceritabersamamu"
+                        "**Subrek hela ai sia**", url="https://t.me/tempatceritabersamamu"
                     )
                 ],
                 [       
@@ -828,7 +828,7 @@ async def jiosaavn(client: Client, message_: Message):
         chat_id=message_.chat.id,
         reply_markup=keyboard,
         photo="final.png",
-        caption=f"🎶 **Sedang memutar** lagu {sname} via Jiosaavn",
+        caption=f"🎶 **Sok naek dengekeun** lagu {sname} via Jiosaavn",
         
     )
     os.remove("final.png")
