@@ -510,7 +510,7 @@ async def play(_, message: Message):
                 ],                     
                 [
                     InlineKeyboardButton(
-                        "**Join Group Khusus Bandung**", url="https://t.me/joinchat/RYQFBjqwQ2rVASS7"
+                        "**Jangan Lupa Subrek 😘**", url="https://t.me/tempatceritabersamamu"
                     )
                 ],
                 [       
@@ -552,7 +552,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="🔊 **Sedang memutar lagu request-an dari** {}".format(
+        caption="🔊 **Keur nyetel lagu pamenta si** {}".format(
         message.from_user.mention()
         ),
     )
@@ -781,7 +781,7 @@ async def jiosaavn(client: Client, message_: Message):
                 ],                     
                 [
                     InlineKeyboardButton(
-                        "**Join Group**", url="https://t.me/joinchat/RYQFBjqwQ2rVASS7"
+                        "**Subrek Channel😘**", url="https://t.me/tempatceritabersamamu"
                     )
                 ],
                 [       
