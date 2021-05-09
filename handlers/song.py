@@ -383,7 +383,7 @@ async def ytmusic(client,message: Message):
 
             if duration > 10:
                 await pablo.edit(
-                    f"❌ Durasi vidio lagu yg lu minta {duration} menit , lu cuma bisa play vidio lagu paling lama {DURATION_LIMIT} menit... ngotak lah ajg 😁"
+                    f"❌ Durasi vidio lagu yg lu minta {duration} menit , lu cuma bisa play vidio lagu paling lama {DURATION_LIMIT} menit... ngotak lah syg😘"
                 )
                 is_downloading = False
                 return
