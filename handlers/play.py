@@ -154,7 +154,7 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style='md')
-    msg = "**Lagu yang sedang dimainkan** di {}".format(message.chat.title)
+    msg = "**Dengekeun tah hitut benada aing** di {}".format(message.chat.title)
     msg += "\n- "+ now_playing
     msg += "\n- Req by "+by
     temp.pop(0)
@@ -260,13 +260,13 @@ async def p_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style='md')
-        msg = "**Lagu yang sedang dimainkan** di {}".format(cb.message.chat.title)
+        msg = "**Dengekeun tah hitut bernada aing** di {}".format(cb.message.chat.title)
         msg += "\n- "+ now_playing
         msg += "\n- Req by "+by
         temp.pop(0)
         if temp:
              msg += '\n\n'
-             msg += '**Antrian lagu**'
+             msg += '**Ngantri hela**'
              for song in temp:
                  name = song[0]
                  usr = song[1].mention(style='md')
@@ -294,7 +294,7 @@ async def m_cb(b, cb):
         else:
             callsmusic.pytgcalls.pause_stream(chat_id)
             
-            await cb.answer('Music paused!')
+            await cb.answer('Musik ereun!')
             await cb.message.edit(updated_stats(m_chat, qeue), reply_markup=r_ply('play'))
                 
 
@@ -307,7 +307,7 @@ async def m_cb(b, cb):
                 await cb.answer('Assistant sedang tidak terhubung dengan vcg', show_alert=True)
         else:
             callsmusic.pytgcalls.resume_stream(chat_id)
-            await cb.answer('Music resumed!')
+            await cb.answer('Musik dituluykeun!')
             await cb.message.edit(updated_stats(m_chat, qeue), reply_markup=r_ply('pause'))
                      
 
@@ -320,13 +320,13 @@ async def m_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style='md')
-        msg = "**Lagu yang sedang dimainkan** di {}".format(cb.message.chat.title)
+        msg = "**Dengekeun hitut bernada aing** di {}".format(cb.message.chat.title)
         msg += "\n- "+ now_playing
         msg += "\n- Req by "+by
         temp.pop(0)
         if temp:
              msg += '\n\n'
-             msg += '**Antrian lagu**'
+             msg += '**Loba ngarequest dibayar henteu anyg!🤬**'
              for song in temp:
                  name = song[0]
                  usr = song[1].mention(style='md')
@@ -469,7 +469,7 @@ async def play(_, message: Message):
         return     
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
-    await lel.edit("🔍 **Laguna keur diteang...**")
+    await lel.edit("🔍 **Dagoan hela aing kr neangan laguna...**")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -480,7 +480,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **Dagoan nya sayang😘...**")
+    await lel.edit("🎵 **Sok naek hela dagoan aing...**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -496,7 +496,7 @@ async def play(_, message: Message):
         views = results[0]["views"]
 
     except Exception as e:
-        await lel.edit("Lagunya ga ketemu nih. Coba cari dengan judul lagu yang lebih jelas, Ketik /help kalo masih belum ngerti")
+        await lel.edit("Eweuh lagu na ai sia ngetik teh cing bener tong ngalierkeun ka urang🤬🤬")
         print(str(e))
         return
 
@@ -766,7 +766,7 @@ async def jiosaavn(client: Client, message_: Message):
         sduration = int(r[0]["duration"])
     except Exception as e:
         await res.edit(
-            "Tidak ditemukan lagu apa pun!."
+            "Ngetik naon ai sia?!."
         )
         print(str(e))
         is_playing = False
@@ -806,7 +806,7 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"📌 **Lagu yang Anda minta dalam antrian di posisi** {position}!",
+            caption=f"📌 **Lagu nu ku maneh penta keur ngantri, dagoan hela...** {position}!",
         
         )           
            
