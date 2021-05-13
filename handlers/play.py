@@ -480,7 +480,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **Sok naek hela dagoan aing...**")
+    await lel.edit("🎵 **Bismillah disawer sok naek...**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -806,7 +806,7 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"📌 **Lagu nu ku maneh penta keur ngantri, dagoan hela...** {position}!",
+            caption=f"📌 **Loba nga-request mayar henteu kehed, sok dagoan hela ngantri😡** {position}!",
         
         )           
            
